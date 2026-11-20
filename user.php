@@ -4,7 +4,7 @@
     <title>Lunches</title>
 </head>
 <body>
-    <h1>Header Here</h1>
+    <h1>Cheese</h1>
     <form action = "adduser.php" method = "post">
         Forename: <input type = "text" name = "forename" placeholder = "Enter your firstname"><br>
         Surname: <input type = "text" name = "surname" placeholder = "Enter your surname"><br>
@@ -12,9 +12,9 @@
         Year: <input type = "number" name = "year" placeholder = "Enter your year group"><br>
         Balance: <input type = "number" name = "balance" placeholder = "Enter your balance"><br>
         Role: <input type = "radio" name = "role" value = "student">Student
-        <input type = "radio" name = "role" value = "Teacher">Teacher<br>
+        <input type = "radio" name = "role" value = "staff">Kitchen Staff<br>
         Password: <input type = "password" name = "password" placeholder = "Enter your password"><br>
-        <input type = "submit" name = "role" value = "Submit">
+        <input type = "submit" value = "Submit">
     </form>
 </body>
 </html>
