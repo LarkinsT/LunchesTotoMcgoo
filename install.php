@@ -11,6 +11,8 @@ $sql = "CREATE DATABASE IF NOT EXISTS LunchesTotoMcgoo";
 $conn->exec($sql);
 echo("Database created successfully<br>");
 $sql = "USE LunchesTotoMcgoo";
+
+// New Database
 $conn->exec($sql);
 echo("Database selected successfully<br>");
 $stmt = $conn->prepare("DROP TABLE IF EXISTS TBLusers;
@@ -23,6 +25,15 @@ Year INT(2) NOT NULL,
 Balance DECIMAL(5,2) NOT NULL,
 Password VARCHAR(200) NOT NULL,
 Role TINYINT(1) NOT NULL,
-Username VARCHAR(30) NOT NULL,
+Username VARCHAR(30) NOT NULL);
 ");
+$stmt->execute();
+echo("Table TBLusers created successfully<br>");
+
+$conn->exec($sql);
+echo("Database selected successfully<br>");
+$stmt = $conn->prepare("DROP TABLE IF EXISTS TBLFood;
+CREATE TABLE TBLFood
+(FoodID
+
 ?>
